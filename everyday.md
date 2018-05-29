@@ -11,3 +11,8 @@ Target: x86_64-apple-macosx10.9
 ### 2018.5.28.Mon.
 add target class
 Learning create class and using class
+
+### 2018.5.29.Tue.
+add closures target to learning closure
+add fundemental to study swift basic syntax
+

@@ -29,9 +29,12 @@ print(vehicle.getSpeed)
 
 let anmial = Animal()
 let person = Person()
+let person1 = Person(leg:2 , name:"孙悟空")
 person.leg = 2
 print (anmial.getLeg)
 print (person.getLeg)
+print ("Person name :\(person.getName())")
+print ("Person1 name :\(person1.getName()), leg is:\(person1.getLeg)")
 
 
 
