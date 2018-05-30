@@ -15,6 +15,8 @@
 		DD0EC41E20BBD4A700501D72 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EC41D20BBD4A700501D72 /* main.swift */; };
 		DD0EC42920BD8F5F00501D72 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EC42820BD8F5F00501D72 /* main.swift */; };
 		DD0EC43420BDB09200501D72 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EC43320BDB09200501D72 /* main.swift */; };
+		DD0EC43B20BEE98900501D72 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EC43A20BEE98900501D72 /* People.swift */; };
+		DD0EC43D20BF234800501D72 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EC43C20BF234800501D72 /* Dog.swift */; };
 		DD73815820B9AF4E00DBB991 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73815720B9AF4E00DBB991 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +103,8 @@
 		DD0EC42820BD8F5F00501D72 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DD0EC43120BDB09200501D72 /* closures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = closures; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0EC43320BDB09200501D72 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DD0EC43A20BEE98900501D72 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		DD0EC43C20BF234800501D72 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		DD73815420B9AF4E00DBB991 /* func */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = func; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD73815720B9AF4E00DBB991 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +184,8 @@
 				DD0EC40E20BB931600501D72 /* main.swift */,
 				DD0EC41320BBCB2700501D72 /* Animal.swift */,
 				DD0EC41520BBCBDC00501D72 /* Person.swift */,
+				DD0EC43A20BEE98900501D72 /* People.swift */,
+				DD0EC43C20BF234800501D72 /* Dog.swift */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -452,8 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0EC43B20BEE98900501D72 /* People.swift in Sources */,
 				DD0EC40F20BB931600501D72 /* main.swift in Sources */,
 				DD0EC41420BBCB2700501D72 /* Animal.swift in Sources */,
+				DD0EC43D20BF234800501D72 /* Dog.swift in Sources */,
 				DD0EC41620BBCBDC00501D72 /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

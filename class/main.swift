@@ -36,5 +36,14 @@ print (person.getLeg)
 print ("Person name :\(person.getName())")
 print ("Person1 name :\(person1.getName()), leg is:\(person1.getLeg)")
 
+//property observe
+print("\n=============================\n")
+var me = People()
+me.firstName = "Zhang"
+me.lastName  = "San"
+me.age = 20
+
+print(me.toString())
+
 
 

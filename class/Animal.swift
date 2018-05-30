@@ -16,8 +16,8 @@ class Animal{
     init(leg:Int){
         self.leg = leg
     }
-    var leg :Int
-    var getLeg:String {
+    var leg :Int //stored properties
+    var getLeg:String {//computed properties
         //get{//如果只是只读，可以省略get
             return "Animal have :\(leg)"
         //}
