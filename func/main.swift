@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 //func
 let possibleNumber = "123"
 let convertedNumber = Int(possibleNumber)
@@ -57,7 +57,46 @@ func repeatfunc(count: Int, task:() -> ()){
 }
 
 repeatfunc(count:5, task:{print("hello")})
-
+*/
 //trailing closures 依附式闭包
 
 //外部参数名
+
+//method of no return value
+func greet(person: String) {
+    print("Hello, \(person)!")
+}
+greet(person: "macleo")
+
+//method of one return value
+func getValue(amount: Int) ->Int{
+    return amount * 2
+}
+print(getValue(amount:3))
+
+//method of return tuple 方法返回元组
+func getTwoValue(amount : Int) ->(Int,Int){
+    return (amount,amount*3)
+}
+print(getTwoValue(amount:3))
+
+//method with default value
+
+func getThreeValue(amount:Int=2) -> Int{
+    return amount * 3
+}
+print("\(getThreeValue()) ====== \(getThreeValue(amount:3))")
+
+//方法的参数可以是另外一个方法的名称
+
+
+//swift 可变参数
+func sum(num:Int...)->Int{
+    var result = 0
+    for n in num{
+        result += n
+    }
+    return result
+}
+print(sum(num:5,3))
+
