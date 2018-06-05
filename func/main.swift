@@ -90,7 +90,8 @@ print("\(getThreeValue()) ====== \(getThreeValue(amount:3))")
 //方法的参数可以是另外一个方法的名称
 
 
-//swift 可变参数
+//swift 可变参数的 参考资料：https://www.jianshu.com/p/a8df8816394e
+//swift 可变参数 可变参数的使用
 func sum(num:Int...)->Int{
     var result = 0
     for n in num{
@@ -98,5 +99,5 @@ func sum(num:Int...)->Int{
     }
     return result
 }
-print(sum(num:5,3))
+print(sum(num:5,3,4))
 

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+/*
 //define a Vehicle class
 class Vehicle{
     //store property
@@ -44,6 +45,33 @@ me.lastName  = "San"
 me.age = 20
 
 print(me.toString())
+*/
+
+class Life{
+    var inheritance:String {
+        return "RNA"
+    }
+}
+let life = Life()
+print(life.inheritance)
+
+class Human:Life{
+    static let url = "http://www.trzcsoft.com"//静态属性
+    override var inheritance: String{
+        return "DNA"
+    }
+    subscript (name:String)->String{//用于定义下标这种访问读取方式
+        return "hello,\(name)"
+    }
+    static func getUrl()->String{
+        return url
+    }
+}
+let people = Human()
+print(people.inheritance)
+print(people["macleo"])
+print(Human.url)
+print(Human.getUrl())
 
 
 
