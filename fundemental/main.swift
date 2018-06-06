@@ -78,3 +78,7 @@ print(a.isStrictSubset(of: b))//严格子集 不能相等
 print("super set : \(a.isSuperset(of: b))")//父集 ，可以相等
 print("strict super set : \(a.isStrictSuperset(of: b))")//严格父集，不能相等
 print("isDisjoint : \(a.isDisjoint(with:b))")//无交集
+
+
+//subscript 部分内容
+

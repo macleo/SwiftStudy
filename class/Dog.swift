@@ -9,12 +9,17 @@
 import Cocoa
 
 class Dog: Animal {
+
     var spark:String
     override init() {
         spark = "WangWang"
         super.init()
     }
+    
     convenience  init(spark:String) {
         self.init()
     }
+
 }
+
+

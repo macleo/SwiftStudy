@@ -47,6 +47,7 @@ me.age = 20
 print(me.toString())
 */
 
+/*
 class Life{
     var inheritance:String {
         return "RNA"
@@ -73,5 +74,82 @@ print(people["macleo"])
 print(Human.url)
 print(Human.getUrl())
 
+//dictionary 声明
+var dict:[String:String] = ["tom":"16","jack":"18"]
+//dict 读取
+print(dict["tom"]!)
+//dict 遍历
+for (key,value) in dict {
+    print("Key : \(key),Value : \(value)")
+}
+
+//struct of wood
+struct Ball {
+    var weight:Double
+    var radius:Double
+}
+
+let ball = Ball(weight:3.5, radius:4.5)
+print ("ball radius:\(ball.radius)")
+
+//2018.6.6
+//申明一个协议
+protocol FullyNamed {
+    var fullName: String { get }
+}
+//结构体实现一个协议
+struct Person1: FullyNamed {
+    var fullName: String
+}
+//实例化一个Person1到john
+let john = Person1(fullName: "John Appleseed")
+print(john.fullName)
+*/
+//声明一个protocol ，内含一个方法
+protocol RandomNumberGenerator{
+    func random( ) -> Double
+}
+//类实现上面的protocol，类似interface的感觉
+class LinearCongruentialGenerator: RandomNumberGenerator {
+    var lastRandom = 42.0
+    let m = 139968.0
+    let a = 3877.0
+    let c = 29573.0
+    func random() -> Double {
+        lastRandom = ((lastRandom * a + c).truncatingRemainder(dividingBy:m))
+        return lastRandom / m
+    }
+}
+let generator = LinearCongruentialGenerator()
+print("Here's a random number: \(generator.random())")
+// Prints "Here's a random number: 0.37464991998171"
+print("And another one: \(generator.random())")
 
 
+protocol A{
+    init(num:Int)
+}
+
+struct B : A{
+    init(num: Int) {
+        print(num)
+    }
+    
+    
+}
+let b = B(num:88)
+
+let a = 1
+//申明一个协议
+protocol ShowHint{
+    func hint()->String
+}
+//对Int 实现协议
+extension Int : ShowHint{
+    func hint()->String{
+        return "整数：\(self)"
+    }
+}
+//对整数调用hint方法
+print(a.hint())
+print(158.hint())
