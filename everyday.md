@@ -16,3 +16,6 @@ Learning create class and using class
 add closures target to learning closure
 add fundemental to study swift basic syntax
 
+### 2019.1.9.Wed.
+
+
