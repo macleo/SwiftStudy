@@ -28,3 +28,6 @@ for str in 1..<5{
 
 
 var someInts = [Int](repeating: 0, count: 3)
+
+var optionalString: String? = "Hello"
+print("optionalString : \(optionalString ?? "hi")")

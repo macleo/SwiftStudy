@@ -202,4 +202,18 @@ print("Media library contains ：\(movieCount) movies and \(songCount) songs")
 
 
 
+///MARK: - 类
+class Car
+{
+    var name: String!
+    init(name: String){
+        self.name = name
+    }
+}
 
+var p1:Car = Car(name: "bench")
+var p2 = p1
+p2.name = "BMW"
+print("p2.name:\(p2.name ?? "p2"),p1.name:\(p1.name ?? "p1")")
+//this example inicated Class is reference type
+//https://my.oschina.net/macleo/blog/3000733

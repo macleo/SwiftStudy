@@ -35,4 +35,13 @@ for str in sixDoubles {
 }
 
 
+var letters = Set<Character>()
+letters.insert("A")
+letters.insert("B")
+print("letters is of type Set<Character> with \(letters.count) items.")
+for str in letters{
+    print (str)
+}
+
+
 
