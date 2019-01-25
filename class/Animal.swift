@@ -12,15 +12,20 @@ class Animal{
     //let 用于表示不可变的变量
     init(){
         leg = 4
+        name = "unknow"
     }
-    init(leg:Int){
+//    init(leg:Int){
+//        self.leg = leg
+//    }
+    init(leg:Int,name:String){
         self.leg = leg
+        self.name = name
     }
-
     var leg :Int //stored properties
     var getLeg:String {//computed properties
         //get{//如果只是只读，可以省略get
             return "Animal have :\(leg)"
         //}
     }
+    var name:String//store prperties
 }

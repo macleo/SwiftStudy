@@ -217,3 +217,33 @@ p2.name = "BMW"
 print("p2.name:\(p2.name ?? "p2"),p1.name:\(p1.name ?? "p1")")
 //this example inicated Class is reference type
 //https://my.oschina.net/macleo/blog/3000733
+
+var p = People()
+p.firstName = "macleo"
+p.age = 42
+p.nickName = "Yang"
+p.increment()
+print("name = \(p.fullName),age=\(p.age),nickname=\(p.nickName)")
+
+p.reset()
+
+
+var cock:Animal = Cock(leg:2,name:"Cock");
+
+print("name=\(cock.name) "+cock.getLeg)
+
+
+var counter = 0;  // 引用计数器
+class BaseClass {
+    init() {
+        counter += 1;
+    }
+    deinit {
+        counter -= 1;
+    }
+}
+
+var show: BaseClass? = BaseClass()
+print(counter)
+show = nil
+print(counter)

@@ -52,4 +52,11 @@ class People : NSObject
         return "Full Name: \(fullName) " + ", Age: \(age) "
     }
     
+    func increment() {
+        age += 1
+    }
+    
+    func reset() {
+        age = 0
+    }
 }
